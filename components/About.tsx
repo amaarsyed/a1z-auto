@@ -82,35 +82,12 @@ const About: React.FC = () => {
                             <h3 className="font-display text-xl font-bold text-white mb-3 group-hover:text-a1z-blue transition-colors">
                                 {feature.name}
                             </h3>
-                            <p className="text-gray-400 text-sm leading-relaxed">
+                            <p className="font-sans text-gray-400 text-sm leading-relaxed">
                                 {feature.description}
                             </p>
                         </motion.div>
                     ))}
                 </div>
-
-                {/* Big visual statement */}
-                <motion.div
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.4 }}
-                    className="mt-20 p-8 md:p-12 rounded-3xl bg-gradient-to-r from-zinc-900 to-black border border-white/10 relative overflow-hidden"
-                >
-                    <div className="absolute top-0 right-0 w-full h-full opacity-30 bg-[url('https://images.unsplash.com/photo-1597762470488-387751f538c6?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay" />
-                    <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-                        <div className="text-left">
-                            <h3 className="text-3xl font-display font-bold text-white mb-2">Ready for Premium Care?</h3>
-                            <p className="text-gray-400">Join hundreds of satisfied clients in the local area.</p>
-                        </div>
-                        <button
-                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="px-8 py-4 bg-a1z-blue hover:bg-blue-600 text-white font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-a1z-blue/50"
-                        >
-                            Book Appointment
-                        </button>
-                    </div>
-                </motion.div>
 
             </div>
         </section>
