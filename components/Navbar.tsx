@@ -28,21 +28,21 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0 cursor-pointer flex items-center gap-2" onClick={() => scrollToSection('hero')}>
-            <span className="font-display font-bold text-3xl italic tracking-tighter text-white">
+          <div className="flex-shrink-0 cursor-pointer flex items-center gap-3" onClick={() => scrollToSection('hero')}>
+            <span className="font-display font-bold text-3xl italic tracking-tighter text-white leading-none">
               A<span className="text-a1z-blue">1</span>Z
             </span>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg"
               alt="Canadian Flag"
-              className="h-6 w-auto rounded-sm shadow-sm"
+              className="h-[1.25rem] w-auto rounded-sm shadow-sm object-contain self-center"
             />
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              {['Services', 'About', 'Testimonials', 'Contact'].map((item) => (
+              {['Services', 'About', 'Contact'].map((item) => (
                 <motion.button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
             className="md:hidden glass border-t border-white/10 overflow-hidden"
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {['Services', 'About', 'Testimonials', 'Contact'].map((item) => (
+              {['Services', 'About', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
