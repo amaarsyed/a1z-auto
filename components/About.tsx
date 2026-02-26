@@ -79,7 +79,7 @@ const About: React.FC = () => {
                             <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center mb-6 text-a1z-blue group-hover:scale-110 transition-transform duration-300">
                                 <feature.icon size={24} />
                             </div>
-                            <h3 className="font-display text-xl font-bold text-white mb-3 group-hover:text-a1z-blue transition-colors">
+                            <h3 className="font-heading text-xl font-semibold text-white mb-3 group-hover:text-a1z-blue transition-colors">
                                 {feature.name}
                             </h3>
                             <p className="font-sans text-gray-400 text-sm leading-relaxed">

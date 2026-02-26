@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
                   onClick={() => scrollToSection(item.toLowerCase())}
                   whileHover={{ scale: 1.1, color: "#007bff" }}
                   whileTap={{ scale: 0.95 }}
-                  className="font-display text-gray-300 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="font-heading text-gray-300 px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   {item}
                 </motion.button>
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
                 href="tel:+15551234567"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="font-display bg-a1z-blue hover:bg-blue-600 text-white px-4 py-2 rounded-full font-bold transition-all flex items-center gap-2 text-sm"
+                className="font-heading bg-a1z-blue hover:bg-blue-600 text-white px-4 py-2 rounded-full font-bold transition-all flex items-center gap-2 text-sm"
               >
                 <Phone size={16} />
                 (555) 123-4567
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="font-display text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left hover:bg-white/5"
+                  className="font-heading text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium w-full text-left hover:bg-white/5"
                 >
                   {item}
                 </button>
